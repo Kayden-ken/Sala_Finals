@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to bottom right, #b85eff, #ffc3e0);
+  color: #000;
+  text-align: center;
+}
+
+section {
+  display: none;
+  padding: 20px;
+}
+
+section:not(.hidden) {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+input, button, select {
+  display: block;
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+.targets-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+.target-card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 150px;
+  flex-shrink: 0;
+}
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  max-height: 150px;
+}
+
+.task-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.pet-area img {
+  width: 100px;
+  margin: 10px auto;
+}
+
+.date-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.date {
+  background: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  min-width: 60px;
+}
+
+.month-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ANDROID MEDIA SCREEN */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  input, button, select {
+    width: 90%;
+  }
+  footer button {
+    font-size: 12px;
+  }
+}
