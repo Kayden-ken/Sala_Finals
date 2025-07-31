@@ -392,7 +392,7 @@ body {
     border: none;
     border-radius: 50%;
     font-size: 30px;
-    color: #c97bff;
+    color: black;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -490,29 +490,24 @@ body {
     position: relative;
     top: 20px;
 }
-
 .calendar-title {
     text-align: center;
     font-size: 28px;
     margin-bottom: 20px;
     color: #ffffff;
-    position: relative;
 }
-
 .month-header {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-
 .nav-button {
     background: none;
     border: none;
     padding: 0;
     cursor: pointer;
 }
-
 .nav-button img {
     width: 20px;
     height: 20px;
@@ -520,13 +515,24 @@ body {
     position: relative;
     right: 15px;
 }
-
+.nav-button2 {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.nav-button2 img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    position: relative;
+    left: 15px;
+}
 .month-title {
     font-size: 20px;
-    font-weight: normal;
+    font-weight: bold;
     color: black;
-    position: relative;
-    right: 15px;
+    text-align: center;
 }
 .pet-header {
     display: flex;
@@ -627,7 +633,7 @@ body {
     right: 82px;
     bottom: 20px;
 }
-.task-card {
+.task-card2 {
     background-color: white;
     border-radius: 15px;
     padding: 16px 20px;
@@ -812,7 +818,91 @@ body {
     position: relative;
     bottom: 20px;
 }
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;      
+}
+.date img {
+    width: 390px;      
+    height: auto;
+    display: block;
+}
+.q {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    width: 100%;
+    max-width: 382px;
+    height: 50px;
+    margin: 30px auto 0 auto; 
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 10px 0;
+}
+.q-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.q-row h2 {
+    font-size: 16px;
+    margin: 0;
+    padding-left: 40px;
+    position: relative;
+}
+.q-row h2::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    left: 15px;     
+    top: 50%;
+    transform: translateY(-50%);
+}
+.q-row > a {
+    margin-left: auto; 
+    padding-right: 20px;
+}
+.time {
+    display: flex;
+    flex-direction: column;
+}
+.time ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    color: white;
+}
+.time ul li {
+    margin-bottom: 30px;
+    margin-right: 330px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+.k {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.k > img {
+    margin-left: 110px;
+    margin-top: -290px;
+    height: 300px;
+}
+.subtask {
+    width: 274px;
+        margin-left: 110px;
 
+}
 @media screen and (max-width: 480px) {
     .container {
         padding: 10px;
